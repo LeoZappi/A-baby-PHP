@@ -1,0 +1,50 @@
+<? 
+comandos ; /* The Beginning*/ 
+?>
+ 
+ // Tipos
+ <? 
+   //inteiros
+ $php = 1234;
+ $php = -234;
+ %php = 0234;
+ $php = 0x34;
+   //Ponto Flutuante
+ $php = 1.234;
+ $php =  23e4;
+   //Strings
+ # 1- com aspas simples
+ $teste = "brasil";
+ $php = '----$teste----\n';
+ echo "$php"; 
+ //saida = "----$teste----\n".
+ # 2- com aspas dluplas
+ $teste = "brasil";
+ $php = "----$teste----\n";
+ echo "$php";
+ //saida = "----Brasil----\n".
+   //Arrays
+ $cor = array(1 => "vermelho", 2 => "verde", 3 => "azul", "teste" => 1);
+ #Listas
+ lista($a, $b, $c) = array("a", "b", "c");
+ $arr = array(1 => ”um”, 3 => ”tres”, ”a” => ”letraA”, 2 =>”dois");
+ lista($a, $b, $c, $d) = $arr;
+ //saida = "a = null; b = um; c = dois; d = tres"
+   //Objeto
+ class teste {
+               function nada(); { 
+                                  echo nada;
+                                }  
+             }
+  $php = new teste;
+  $php = nada();
+   //Booleanos (Trul or False)
+ INTERGER:
+ #saida = '0'(False); '!=0'(Trul)
+   //Coerções
+ $php = "1";         //string "1"
+ $php = $php + 1;    //INTERGE: 2
+ $php = $PHP + 3.7;  //double 5.7
+ $php = 1 + 1.5;     //double 2.5
+  ?>
+ 
