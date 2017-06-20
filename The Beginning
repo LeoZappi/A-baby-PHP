@@ -1,8 +1,9 @@
 <? 
+
 comandos ; /* The Beginning*/ 
 ?>
  
- // Tipos
+ // 1 - Tipos
  <? 
    //inteiros
  $php = 1234;
@@ -46,5 +47,27 @@ comandos ; /* The Beginning*/
  $php = $php + 1;    //INTERGE: 2
  $php = $PHP + 3.7;  //double 5.7
  $php = 1 + 1.5;     //double 2.5
-  ?>
+ #more
+ $php = 1 + “10.5”;         // $php == 11.5 
+ $php = 1 + “-1.3e3”;       // $php == -1299
+ $php = 1 + “teste10.5”;    // $php == 1
+ $php = 1 + “10testes”;     // $php == 11
+ $php = 1 + " 10testes";    // $php == 11
+ $php = 1 + "+ 10testes";   // $php == 1 
+   //Transformação explícita de tipos
+ $php = 15;             // INTERGE 15
+ $php = (double) $php;  // DOUBLE 15.0
+ $php = 3.9;            // DOUBLE 3.9
+ $php = (int) $php;     // INTERGE 3
+   //Settype
+ $php = 15;
+ settype ($php,double)
+ 
+ ?>
+   // 2 - Constantes
+ <?
+ 
+ 
+ 
+ ?>
  
